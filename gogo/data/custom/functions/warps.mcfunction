@@ -16,3 +16,40 @@ execute as @a[scores={dzban=1}] run tp @s -252.5 64.00 -84.5 0 -28
 execute as @a[scores={dzban=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
 execute as @a[scores={dzban=1}] at @s run particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 1 3
 execute as @a[scores={dzban=1}] run scoreboard players set @s dzban 0
+
+# pinkdom
+scoreboard players enable @a[team=szarlotki] pinkdom
+execute as @a[scores={pinkdom=1}] run tp @s 2018.5 58 6331.5 90 0
+execute as @a[scores={pinkdom=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={pinkdom=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={pinkdom=1}] run scoreboard players set @s pinkdom 0
+
+# rubkitp
+scoreboard players enable @a[team=teamhubert] rybkitp
+execute as @a[scores={rybkitp=1}] run tp @s 274 82 117 74 -6
+execute as @a[scores={rybkitp=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={rybkitp=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={rybkitp=1}] run scoreboard players set @s rybkitp 0
+
+# wolves
+scoreboard players enable @a[team=wolves] wolves
+execute as @a[scores={wolves=1}] run tp @s 688.5 64 -566.5 -90 0
+execute as @a[scores={wolves=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={wolves=1}] at @s run particle minecraft:crit ~ ~2 ~ 1 1 1 1 200
+execute as @a[scores={wolves=1}] run scoreboard players set @s wolves 0
+
+# silesia
+scoreboard players enable @a[team=teampatryk] silesia
+execute as @a[scores={silesia=1}] run tp @s -63.5 80 -807.5 -180 0
+execute as @a[scores={silesia=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={silesia=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={silesia=1}] run scoreboard players set @s silesia 0
+
+# koloseum
+scoreboard players enable @a[team=dzbany] koloseum
+execute as @a[scores={koloseum=1}] run tp @s -916.5 68 -57 0 0
+execute as @a[scores={koloseum=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={koluseum=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={koloseum=1}] run scoreboard players set @s koloseum 0
+
+
