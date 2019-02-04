@@ -1,3 +1,3 @@
 # GogoFoxDataPack
 
-Pliki należy umieścić w .minecraft/saves/[nazwa_świata]/datapacks/
+Folder 'gogo' należy umieścić w .minecraft/saves/[nazwa_świata]/datapacks/
