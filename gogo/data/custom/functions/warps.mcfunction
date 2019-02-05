@@ -52,4 +52,11 @@ execute as @a[scores={koloseum=1}] at @s run playsound minecraft:entity.puffer_f
 execute as @a[scores={koluseum=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
 execute as @a[scores={koloseum=1}] run scoreboard players set @s koloseum 0
 
+# mazur
+scoreboard players enable @a[team=teamdolar] mazur
+execute as @a[scores={mazur=1}] run tp @s 272.5 111 -1267.5 0 0
+execute as @a[scores={mazur=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={mazur=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={mazur=1}] run scoreboard players set @s mazur 0
+
 
