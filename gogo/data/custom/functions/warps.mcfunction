@@ -59,4 +59,9 @@ execute as @a[scores={mazur=1}] at @s run playsound minecraft:entity.puffer_fish
 execute as @a[scores={mazur=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
 execute as @a[scores={mazur=1}] run scoreboard players set @s mazur 0
 
-
+# kaczki
+scoreboard players enable @a[team=teamkaczki] kaczki
+execute as @a[scores={kaczki=1}] run tp @s -2260.5 76 -2783.5 0 0
+execute as @a[scores={kaczki=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={kaczki=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={kaczki=1}] run scoreboard players set @s kaczki 0
