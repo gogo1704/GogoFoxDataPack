@@ -65,3 +65,10 @@ execute as @a[scores={kaczki=1}] run tp @s -2260.5 76 -2783.5 0 0
 execute as @a[scores={kaczki=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
 execute as @a[scores={kaczki=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
 execute as @a[scores={kaczki=1}] run scoreboard players set @s kaczki 0
+
+# tomektodebil
+scoreboard players enable @a[name=Flox] tomektodebil
+execute as @a[scores={tomektodebil=1}] run tp @s -8134.5 69 1664.5 -180 0
+execute as @a[scores={tomektodebil=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={tomektodebil=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={tomektodebil=1}] run scoreboard players set @s tomektodebil 0
