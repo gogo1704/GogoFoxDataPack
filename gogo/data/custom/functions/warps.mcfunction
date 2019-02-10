@@ -2,6 +2,7 @@
 ###
 # Każdy warp musi byc zbudowany z komend w kolejności: enable, tp, dzwiek/particles, reset
 # Przed utworzeniem warpa nalezy utworzyc nowy scoreboard objective (/scoreboard objective add <nazwa> trigger)
+# Po edycji datapacku należy wpisać komende /minecraft:reload
 
 # spawn
 scoreboard players enable @a spawn
@@ -72,3 +73,17 @@ execute as @a[scores={tomektodebil=1}] run tp @s -8134.5 69 1664.5 -180 0
 execute as @a[scores={tomektodebil=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
 execute as @a[scores={tomektodebil=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
 execute as @a[scores={tomektodebil=1}] run scoreboard players set @s tomektodebil 0
+
+# bacik
+scoreboard players enable @a[name=Trzezwy] bacik
+execute as @a[scores={bacik=1}] run tp @s -3183.5 64 506.5 90 0
+execute as @a[scores={bacik=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={bacik=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={bacik=1}] run scoreboard players set @s bacik 0
+
+# axen
+scoreboard players enable @a[name=Aksener] axen
+execute as @a[scores={axen=1}] run tp @s 119.5 77 508.5 0 0
+execute as @a[scores={axen=1}] at @s run playsound minecraft:entity.puffer_fish.blow_up master @a ~ ~ ~ 3
+execute as @a[scores={axen=1}] at @s run particle minecraft:crit ~ ~3 ~ 2 2 2 1 100
+execute as @a[scores={axen=1}] run scoreboard players set @s axen 0
